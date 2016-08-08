@@ -1,0 +1,12 @@
+name: Clive's Blog
+description: Clive Chan's Tech Blog
+url: blog.clive.io
+author: Clive Chan
+author_email: cc@clive.io
+category_dir: /
+permalink: pretty
+paginate: 3
+repository: cchan/blog
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
