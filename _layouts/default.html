@@ -1,34 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ page.title }} | {{ site.name }}</title>
-  
-  <meta name="description" content="{{ site.name }} - {{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-  
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  
-  {% seo %}
-</head>
-<body>
-  <nav>
-    <!-- ... -->
-  </nav>
-  <h1>{{ page.title }}</h1>
-  
-  {{ content }}
-  
-  <script>
-    (function(C,l,i,v,e,I,O){C['GoogleAnalyticsObject']=e;C[e]=C[e]||function(){
-    (C[e].q=C[e].q||[]).push(arguments)},C[e].l=1*new Date();I=l.createElement(i),
-    O=l.getElementsByTagName(i)[0];I.async=1;I.src=v;O.parentNode.insertBefore(I,O)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-62605323-3', 'auto');
-    ga('send', 'pageview');
-  </script>
-</body>
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
 </html>
